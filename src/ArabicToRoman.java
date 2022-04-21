@@ -11,12 +11,10 @@ public class ArabicToRoman {
         if (number >= 900) {
             s = "CM" + hundred(number - 900);
         } else if (number >= 500) {
-            s = "D" + fourHundred(number - 500);
-        } else if (number >= 400) {
-            s = "CD" + hundred(number - 400);
-        } else {
-            s = fourHundred(number);
-        }
+                  s = "D" + fourHundred(number - 500);
+               } else if (number >= 400) {
+                         s = "CD" + hundred(number - 400);
+                      } else s = fourHundred(number);
         return s;
     }
 
@@ -32,12 +30,10 @@ public class ArabicToRoman {
         if (number >= 90) {
             s = "XC" + ten(number - 90);
         } else if (number >= 50) {
-            s = "L" + fourthy(number - 50);
-        } else if (number >= 40) {
-            s = "XL" + ten(number - 40);
-        } else {
-            s = fourthy(number);
-        }
+                  s = "L" + fourthy(number - 50);
+               } else if (number >= 40) {
+                         s = "XL" + ten(number - 40);
+                      } else s = fourthy(number);
         return s;
     }
 
@@ -53,12 +49,10 @@ public class ArabicToRoman {
         if (n == 9) {
             s = "IX";
         } else if (n >= 5) {
-            s = "V" + three (n - 5);
-        } else if (n == 4) {
-            s = "IV";
-        } else {
-            s = three (n);
-        }
+                 s = "V" + three (n - 5);
+               } else if (n == 4) {
+                        s = "IV";
+                      } else s = three (n);
         return s;
     }
 
